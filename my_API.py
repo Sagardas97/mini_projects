@@ -4,11 +4,11 @@ from flask import Flask,request,jsonify
 
 app = Flask(__name__)
 
-@app.route('/pentation',methods = ['GET'])
+@app.route('/hello',methods = ['GET'])
 def sagar():
-    p = "Welcome to Pentation Analytics"
-    a = "Pentation Analytics"
-    w = "https://www.pentationanalytics.com/"
+    p = "Welcome"
+    a = "Hello World"
+    w = "https://www.github.com/"
 
     return jsonify({"Welcome Message":p,"Company":a,"Website":w})
 
