@@ -5,7 +5,7 @@ def metadata_extractor(directory):
     files = os.listdir(directory)
     for file in files:
         if '.' in file:
-            if file.split(".")[1] == "pdf":
+            if file.split(".")[-1] == "pdf":
                 fp = open(directory+"/"+file, 'rb')
                 parser = PDFParser(fp)
                 doc = PDFDocument(parser)
